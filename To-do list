@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> To-Do List</title>
+<meta charset="utf-8">
+    
+    <!-- JavaScript Code -->
+<script>
+
+var btn = document.getElementById("add");
+var list = document.getElementById("list");
+
+    
+btn.onclick = function(){
+    var li = document.createElement('li');
+    li.innerHTML = document.getElementById('todo').value;
+    list.appendChild(li);
+    document.getElementById("todo").value = " ";
+    
+}
+
+</script>
+    
+</head>
+<body>
+<h1>To-Do List</h1>
+<h4>Fill the list by entering input in the box below...</h4>    
+    
+<ul id="list">
+    <li>Wake Up!</li>
+</ul>
+<label for="todo">
+    <h3>New To-Do</h3>
+</label>
+    
+<input type="text" id="todo" name="todo" placeholder="Enter the value">    
+    
+<button id="add">Add</button>
+</body>
+
+
+
+</html>
