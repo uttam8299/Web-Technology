@@ -4,24 +4,6 @@
 <head>
 <title> To-Do List</title>
 <meta charset="utf-8">
-    
-    <!-- JavaScript Code -->
-<script>
-
-var btn = document.getElementById("add");
-var list = document.getElementById("list");
-
-    
-btn.onclick = function(){
-    var li = document.createElement('li');
-    li.innerHTML = document.getElementById('todo').value;
-    list.appendChild(li);
-    document.getElementById("todo").value = " ";
-    
-}
-
-</script>
-    
 </head>
 <body>
 <h1>To-Do List</h1>
@@ -38,7 +20,22 @@ btn.onclick = function(){
     
 <button id="add">Add</button>
 </body>
-
-
-
 </html>
+
+  <!-- JavaScript Code -->
+<script>
+
+var btn = document.getElementById("add");
+var list = document.getElementById("list");
+
+    
+btn.onclick = function(){
+    var li = document.createElement('li');
+    li.innerHTML = document.getElementById('todo').value;
+    list.appendChild(li);
+    document.getElementById("todo").value = " ";
+    
+}
+
+</script>
+    
