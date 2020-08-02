@@ -1,1 +1,1 @@
-This repository contains Web Technologies Assignment Questions
+This repository contains Web Technologies Programs.
